@@ -426,6 +426,29 @@ p {
   transform: scale(1.1);
   color: var(--color-orange);
 }
+
+/* Arrow Btn */
+.arrow-up {
+  position: fixed;
+  color: var(--color-white);
+  background-color: var(--color-pink);
+  border-radius: 50%;
+  font-size: 50px;
+  bottom: 50px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  opacity: 0;
+  pointer-events: none;
+  /* 디스플레이가 완전히 없어졌다가 생기는 것이기 때문에 애니메이션이 안됨 */
+  /* 사용하려면 디스플레이를 지우고 opacity와 pointer-events를 활용해야합니다. */
+  transition: all 300ms ease-in;
+}
+.arrow-up.visible {
+  pointer-events: auto;
+  opacity: 1;
+}
+
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
   .navbar__toggle-btn {
