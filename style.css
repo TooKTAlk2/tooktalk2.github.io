@@ -33,9 +33,8 @@
 }
 /* Section Common */
 .section {
-  padding: 50px;
+  padding: 75px 50px;
   text-align: center;
-
   margin: auto;
 }
 .section__container {
