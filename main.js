@@ -3,9 +3,10 @@
 // make navbar transparent when it is on the top, otherwise it is pink background-color
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
-
+const home = document.querySelector('#home');
+const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
-  if (window.scrollY > navbarHeight) {
+  if (window.scrollY > homeHeight) {
     navbar.classList.add('navbar--dark');
   } else {
     navbar.classList.remove('navbar--dark');
@@ -38,8 +39,6 @@ homeContactBtn.addEventListener('click', () => {
 });
 
 // Make home slowly transparent as the window scrolls down
-const home = document.querySelector('#home');
-const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
   // 1이면 불투명 0이면 투명
   const content = document.querySelector('.home__content');
@@ -80,13 +79,13 @@ workBtnContainer.addEventListener('click', (e) => {
   //anim-out 추가한 후 0.3초 이후에 셋타임 콜백함수에 호출
   setTimeout(() => {
     projects.forEach((project) => {
-      console.log(project.dataset.type);
       if (filter == '*' || filter == project.dataset.type) {
         project.classList.remove('invisible');
       } else {
         project.classList.add('invisible');
       }
     });
+
     projectsContainer.classList.remove('anim-out');
   }, 300);
 });

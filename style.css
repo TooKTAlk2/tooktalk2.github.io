@@ -14,6 +14,10 @@
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
+  --color-pupple: #d4bfd8;
+  --color-dark-pupple: #a38fa7;
+  --color-teal: #00d8d4;
+  --color-dark-teal: #00a6a7;
 
   /* Font size */
   --font-large: 48px;
@@ -112,7 +116,7 @@ p {
   z-index: 1;
 }
 #navbar.navbar--dark {
-  background-color: var(--color-pink);
+  background-color: var(--color-teal);
   padding: 8px;
 }
 .navbar__menu {
@@ -133,7 +137,7 @@ p {
 }
 .navbar__menu__item:hover {
   border: 1px solid var(--color-white);
-  background-color: var(--color-dark-pink);
+  background-color: var(--color-dark-teal);
 }
 .navbar__toggle-btn {
   position: absolute;
@@ -171,7 +175,7 @@ p {
   border-radius: var(--size-border-radius);
 }
 .home__contact:hover {
-  background-color: var(--color-orange);
+  background-color: var(--color-pupple);
 }
 
 /* About */
@@ -200,7 +204,7 @@ p {
   font-size: var(--font-small);
 }
 .major__icon:hover i {
-  color: var(--color-pink);
+  color: var(--color-teal);
   transform: rotate(-30deg) scale(1.2);
 }
 
@@ -295,7 +299,7 @@ p {
 }
 .category__btn.selected,
 .category__btn:hover {
-  background-color: var(--color-pink);
+  background-color: var(--color-teal);
   color: white;
 }
 .category__btn.selected .category__count,
@@ -421,10 +425,10 @@ p {
   color: var(--color-light-grey);
 }
 .testimonial__speech-bubble a {
-  color: var(--color-pink);
+  color: var(--color-teal);
 }
 #contact {
-  background-color: var(--color-pink);
+  background-color: var(--color-teal);
 }
 .contact__title,
 .contact__email,
@@ -450,7 +454,7 @@ p {
 .arrow-up {
   position: fixed;
   color: var(--color-white);
-  background-color: var(--color-pink);
+  background-color: var(--color-teal);
   border-radius: 50%;
   line-height: 70px;
   font-size: 50px;
@@ -463,6 +467,9 @@ p {
   /* 디스플레이가 완전히 없어졌다가 생기는 것이기 때문에 애니메이션이 안됨 */
   /* 사용하려면 디스플레이를 지우고 opacity와 pointer-events를 활용해야합니다. */
   transition: all 300ms ease-in;
+}
+.arrow-up:hover {
+  background-color: var(--color-dark-teal);
 }
 .arrow-up.visible {
   pointer-events: auto;
@@ -486,7 +493,7 @@ p {
     flex-direction: column;
     /* 왼쪽 정렬 */
     align-items: flex-start;
-    background-color: var(--color-pink);
+    background-color: var(--color-teal);
   }
   #navbar.navbar--dark {
     padding: 16px;
