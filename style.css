@@ -170,6 +170,9 @@ p {
   border: 2px solid var(--color-white);
   border-radius: var(--size-border-radius);
 }
+.home__contact:hover {
+  background-color: var(--color-orange);
+}
 
 /* About */
 .about__majors {
@@ -288,6 +291,7 @@ p {
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
   padding: 8px 48px;
+  position: relative;
 }
 .category__btn.selected,
 .category__btn:hover {
@@ -308,12 +312,13 @@ p {
   /* span은 컨텐츠 사이즈만큼 만들기때문에 못생김 */
   display: inline-block;
   line-height: 24px;
-  position: relative;
+  position: absolute;
   top: -20px;
-  left: 4px;
+  right: 16px;
   opacity: 0;
   transition: all var(--animation-duration) ease-in;
 }
+
 .work__projects {
   display: flex;
   flex-wrap: wrap;
@@ -321,6 +326,7 @@ p {
   opacity: 1;
   transition: all var(--animation-duration) ease-out;
 }
+
 .work__projects.anim-out {
   opacity: 0;
   transform: scale(0.96) translateY(40px);
@@ -336,6 +342,7 @@ p {
   margin: 2px;
   background-color: var(--color-light-white);
 }
+
 .project.invisible {
   display: none;
 }
@@ -345,6 +352,7 @@ p {
   max-height: 100%;
   align-self: center;
 }
+
 .project:hover .project__description {
   opacity: 0.8;
   transform: translateY(0px);
@@ -367,6 +375,7 @@ p {
 .project__description h3 {
   color: var(--color-orange);
 }
+
 .project__description h3:after {
   content: '';
   display: block;
@@ -443,6 +452,7 @@ p {
   color: var(--color-white);
   background-color: var(--color-pink);
   border-radius: 50%;
+  line-height: 70px;
   font-size: 50px;
   bottom: 50px;
   right: 50px;
@@ -461,6 +471,13 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+  :root {
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
   .navbar__toggle-btn {
     display: block;
   }
@@ -483,11 +500,16 @@ p {
   .navbar__menu.open {
     display: block;
   }
+  .section {
+    padding: 16px;
+  }
   .about__majors {
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0px;
   }
   .major {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
   .skillset {
     flex-direction: column;
@@ -496,8 +518,37 @@ p {
     /* 화면 메꿔주기  */
     flex-grow: 1;
   }
+  .category__btn {
+    margin: 4px 0;
+    width: 100%;
+  }
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
+  }
   .testimonial__avatar {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
+  }
+  .testimonial__speech-bubble {
+    order: 1;
+  }
+  .testimonial__avatar:nth-child(odd),
+  .testimonial__avatar:nth-child(even) {
+    margin: 0;
+    margin-bottom: 8px;
+  }
+  .arrow-up {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    bottom: 16px;
+    right: 16px;
+  }
+  .navbar__toggle-btn {
+    top: 16px;
+    right: 16px;
+    font-size: var(--font-medium);
   }
 }
