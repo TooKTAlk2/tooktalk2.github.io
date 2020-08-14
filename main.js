@@ -11,6 +11,7 @@ document.addEventListener('scroll', () => {
     navbar.classList.remove('navbar--dark');
   }
 });
+
 // handle scrolling when tapping on the navbar menu
 const navbarMenu = document.querySelector('.navbar__menu');
 
@@ -21,6 +22,13 @@ navbarMenu.addEventListener('click', (event) => {
     return;
   }
   scrollIntoView(link);
+  navbarMenu.classList.remove('open');
+});
+
+// navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
 });
 
 // move contact section when clicking contact me button
@@ -82,8 +90,6 @@ workBtnContainer.addEventListener('click', (e) => {
     projectsContainer.classList.remove('anim-out');
   }, 300);
 });
-
-// handling button stage
 
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
