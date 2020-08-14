@@ -61,6 +61,13 @@ workBtnContainer.addEventListener('click', (e) => {
   if (filter == null) {
     return;
   }
+  // Remove Selected class from the previous item and select the new one
+  const selected = document.querySelector('.category__btn.selected');
+  selected.classList.remove('selected');
+  const target =
+    e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+  target.classList.add('selected');
+
   projectsContainer.classList.add('anim-out');
   //anim-out 추가한 후 0.3초 이후에 셋타임 콜백함수에 호출
   setTimeout(() => {
@@ -75,6 +82,8 @@ workBtnContainer.addEventListener('click', (e) => {
     projectsContainer.classList.remove('anim-out');
   }, 300);
 });
+
+// handling button stage
 
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
