@@ -156,8 +156,8 @@ p {
   text-align: center;
 }
 .home__avatar {
-  width: 250px;
-  height: 250px;
+  width: 450px;
+  height: 450px;
   border-radius: 50%;
   border: 2px solid var(--color-light-white);
 }

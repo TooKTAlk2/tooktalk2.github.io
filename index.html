@@ -35,7 +35,7 @@
         <li class="navbar__menu__item" data-link="#about">About</li>
         <li class="navbar__menu__item" data-link="#skills">Skills</li>
         <li class="navbar__menu__item" data-link="#work">Mywork</li>
-        <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li>
+        <!-- <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li> -->
         <li class="navbar__menu__item" data-link="#contact">contact</li>
       </ul>
       <!-- Toggle button -->
@@ -44,7 +44,7 @@
     <section id="home">
       <div class="home__content">
         <img
-        src="imgs/profile.jpg"
+        src="imgs/profile.png"
         alt="Matt's profile photo"
         class="home__avatar"
         />
@@ -70,29 +70,29 @@
           </div>
           <h2 class="major__title">Machine Learning</h2>
           <p class="major__description">
-            Pytorch <br/> Tensorflow <br/> Tensorboard<br/>...
+            Pytorch <br/> Tensorflow <br/> Vision <br/>...
           </p>
         </div>
         <div class="major">
+          <div class="major__icon"><i class="fas fa-database"></i></div>
+          <h2 class="major__title">Data Science</h2>
+          <p class="major__description">Pandas<br/>Seaborn <br/> matplotlib <br/> Kaggle Challenge <br/> ... </p>
+        </div>
+          <div class="major">
             <div class="major__icon">
               <i class="fab fa-react"></i>
             </div>
             <h2 class="major__title">Web</h2>
             <p class="major__description"> 
-              HTML CSS JS<br/> REACT<br/>NodeJs <br/> SQL <br/> ...
+              HTML / CSS / JS<br/> REACT<br/> NodeJs <br/> SQL <br/> ...
             </p>
-        </div>
-          <div class="major">
-            <div class="major__icon"><i class="fas fa-mobile"></i></div>
-            <h2 class="major__title">Mobile</h2>
-            <p class="major__description">React-Native<br/> ... </p>
+            </div>
           </div>
-        </div>
         <div class="about__jobs">
           <div class="job">
             <img src="./imgs/company/trans-theimc.png" alt="TheImc" class="job__logo__TheImc" />
             <div class="job__description">
-            <p class="job__name">Currently working at TheIMC as Machine Learning Developer</p>
+            <p class="job__name">Currently working at TheIMC as Data Scientist</p>
             <p class="job__period">2020 June - Until now</p>
           </div>
           </div>
@@ -113,9 +113,8 @@
       <h2>Skills & Attributes</h2>
       <p>
         Can make Web AI Application and use Python as Language and Pytorch or Tensorflow as DeepLearning FrameWork.
-        I just learned React, js, css, html in 2020 and currently make some side projects.
+        I just learned React, js, css, html in 2020 and currently make some side projects .
         Passion for learning new technologies, Capable of working of within a team enviorment and independently.
-        Ability to plan and time schedule, work under strict time pressure and adapt quickly when need.
       </p>
       <div class="skillset">
         <div class="skillset__left">
@@ -131,38 +130,29 @@
           </div>
           <div class="skill">
             <div class="skill__description">
-              <span>Pytorch</span>
-              <span>60%</span>
+              <span>Pytorch, TensorFlow</span>
+              <span>50%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value" style="width : 60%;"></div>
+              <div class="skill__value" style="width : 50%;"></div>
             </div>
           </div>
           <div class="skill">
             <div class="skill__description">
-              <span>HTML,CSS,JS</span>
-              <span>82%</span>
+              <span>HTML, CSS, JS</span>
+              <span>85%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value" style="width : 82%;"></div>
+              <div class="skill__value" style="width : 85%;"></div>
             </div>
           </div>
           <div class="skill">
             <div class="skill__description">
               <span>React</span>
-              <span>70%</span>
+              <span>60%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value"style="width : 70%;"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>ReactNative</span>
-              <span>50%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width : 50%;"></div>
+              <div class="skill__value"style="width : 60%;"></div>
             </div>
           </div>
         </div>
@@ -170,16 +160,17 @@
           <div class="tools">
             <h3 class="skillset__title">Tools</h3>
             <ul class="tools__list">
-              <li><span>VS code</span></li>
-              <li><span>Pycharm</span></li>
+              <li><span>PyCharm</span></li>
               <li><span>Jupyter notebook & Colab </span></li>
+              <li><span>VS Code</span></li>
+              
             </ul>
           </div>
           <div class="etc">
             <h3 class="skillset__title">ETC</h3>
             <ul class="etc__list">
-              <li><span>Git</span></li>
-              <li><span>A little bit Design Skill</span></li>
+              <li><span>Git For TEAM</span></li>
+              <li><span>English</span></li>
               <li><span>Mathmatics and physics</span></li>
             </ul>
           </div>
@@ -194,54 +185,46 @@
       <h3>Projects</h3>
       <div class="work__categories">
         <button class="category__btn selected" data-filter="*">
-          All <span class="category__count">4</span>
+          All <span class="category__count">3</span>
         </button>
         <button class="category__btn" data-filter="ml">
-          ML<span class="category__count">2</span>
+          ML<span class="category__count">1</span>
         </button>
+
+        <button class="category__btn" data-filter="data-science">
+          Data Science <span class="category__count">1</span>
         <button class="category__btn" data-filter="web">
           Web<span class="category__count">1</span>
         </button>
-        <button class="category__btn" data-filter="mobile">
-          Mobile <span class="category__count">1</span>
         </button>
       </div>
-
       <div class="work__projects">
         <a href="https://github.com/TooKTAlk2/Dish_Classfication" class="project" target="_blank" data-type="ml"
           ><img class="project__image" src="imgs/projects/koreanfood-2.jpg" alt="Dish_Classfication" />
           <div class="project__description">
             <h3>Korean Food Classfication</h3>
-            <span>Python,Tensorflow,OpenCV ...</span>
+            <span>Python, Tensorflow, openCV...</span>
           </div>
         </a>
-        <a href="" class="project" target="_blank" data-type="ml"
+        <a href="" class="project" target="_blank" data-type="data-science"
           ><img class="project__image" src="imgs/projects/pipe.jpg" alt="pipe" />
           <div class="project__description">
-            <h3>대구상수관로 위험관로 분석</h3>
-            <span>Python,pandas,</span>
+            <h3>대구상수관로 위험관로 분석(Private Solutionary)</h3>
+            <span>Python, pandas, matpyplot, seaborn, QGIS...</span>
           </div>
         </a>
         <a href="https://github.com/TooKTAlk2/blog" class="project" target="_blank" data-type="web"
           ><img class="project__image" src="imgs/projects/blog.png" alt="blog" />
           <div class="project__description">
             <h3>Blog Clone Coding</h3>
-            <span>TypeScript, MongoDB, Redux, NodeJs</span>
-          </div>
-        </a>
-
-        <a href="" class="project" target="_blank" data-type="mobile"
-          ><img class="project__image" src="imgs/favicon.png" alt="sns" />
-          <div class="project__description">
-            <h3>SnS Clone Coding</h3>
-            <span>Coming Soon!</span>
+            <span>JavaScript, styled-Component, Redux, MongoDB, NodeJs, express ... </span>
           </div>
         </a>
       </div>
     </div>
     </section>
     <!-- testimonials -->
-    <section id="testimonials" class="section">
+    <!-- <section id="testimonials" class="section">
       <div class="section__container">
       <h1>Testimonials</h1>
       <h3>See what they say about me</h3>
@@ -251,14 +234,14 @@
           <img src="/imgs/people/people.png" alt="" class="testimonial__avatar" />
           <div class="testimonial__speech-bubble">
             <p>
-              Coming Soon!
+              
             </p>
             <p class="name"><a href="">A</a>/TheIMC</p>
           </div>
         </div>
       </div>
     </div>
-    </section>
+    </section> -->
 
     <!-- contact -->
     <section id="contact" class="section">
@@ -270,7 +253,6 @@
         <a href="https://velog.io/@dk99521"><i class="fab fa-blogger"></i></a>
       </div>
       <p class="contact__rights">2020 Matt PortFolio - All rights reserved</p>
-      
     </section>
     <button class="arrow-up"><i class="fas fa-arrow-up"></i></button>
   </body>
